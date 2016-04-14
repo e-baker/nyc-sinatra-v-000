@@ -1,0 +1,13 @@
+<h1><%= @figure.name %></h1>
+<h2>Title<%= 's' if @figure.titles.count > 1 %>: </h2>
+<ul>
+  <% @figure.titles.each do |title| %>
+  <li><%= title.name %></li>
+  <% end %>
+</ul>
+<h2>Landmark<%= 's' if @figure.landmarks.count > 1 %>: </h2>
+<ul>
+  <% @figure.landmarks.each do |landmark| %>
+  <li><%= landmark.name %></li>
+  <% end %>
+</ul>
